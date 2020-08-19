@@ -194,7 +194,7 @@ span {
 }
 
 .music {
-    margin-top: 516px;
+    margin-top: 460px;
     display: grid;
     grid-template-columns: 30% auto;
 }
@@ -204,7 +204,7 @@ span {
     display: flex;
     justify-content: space-between;
     width: 10%;
-    min-width: 100px;
+    min-width: 90px;
 }
 
 .arrows img {
@@ -233,3 +233,65 @@ span {
 
 }
 
+@media (max-width: 960px) {
+    h2 {
+        letter-spacing: -5px;
+    }
+}
+
+@media (max-width: 760px) {
+    .bohan-pic {
+        min-width: 200px;
+    }
+
+    .tour {
+        padding-top: 280px;
+    }
+
+    .music {
+        margin-top: 280px;
+    }
+ 
+}
+
+@media (max-width: 480px) {
+
+    .day {
+        width: 20%;
+    }
+
+    .bohan {
+        padding-top: 5px;
+    }
+
+    .bohan-pic{
+        margin-left: auto;
+        min-width: initial;
+        width: 100%;
+    }
+    .phoenix {
+        display: none;
+    }
+
+    nav {
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+
+    ul li {
+        margin-left: 24px;
+    }
+
+    .bio {
+        margin-top: 80px;
+        font-family: 'Neue Haas txt reg';
+        font-size: 16px;
+        margin-bottom: 225px;
+    }
+
+    h1 {
+        font-size: 34.2vw;
+        margin-left: -2px;
+    }
+ 
+}
