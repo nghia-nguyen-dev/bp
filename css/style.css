@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Neue Haas txt reg';
+    src: url(../assets/fonts/NHaasGroteskTXPro-55Rg.otf);
+}
+
+@font-face {
+    font-family: 'Neue Haas ds lt';
+    src: url(../assets/fonts/NHaasGroteskDSPro-45Lt.otf);
+}
+
+@font-face {
+    font-family: 'Neue Haas ds reg';
+    src: url(../assets/fonts/NHaasGroteskDSPro-55Rg.otf);
+}
+
+@font-face {
+    font-family: 'Ogg lt';
+    src: url(../assets/fonts/Ogg-Light.ttf);
+}
+
+:root {
+    --bg-color: #F7F7F8;
+    --red:#E10000;
+}
+
+
+
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+    color: initial;
+}
+
+
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--red-dark);
+    font-family: 'Neue Haas txt reg', Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+header {
+    padding: 3px 15px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: -0.5px;
+}
+
+nav a:hover {
+    color: var(--red);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin-left: 50px;
+    transition: .35s ease;
+}
+
+main {
+    padding: 0 15px;
+}
+
+h1 {
+    font-family: 'Ogg lt', Helvetica, sans-serif;
+    font-size: 35.3vw;
+    letter-spacing: -4px;
+    line-height: .76;
+    margin-left: -9px;
+    opacity: .9;
+}
+
+h2 {
+    font-size: 25.69vw;
+    letter-spacing: -12.33px;
+    font-family: 'Neue Haas ds lt';
+    line-height: .78;
+    opacity: .9;
+}
+
+.bohan {
+    display: flex;
+    justify-content: space-between;     
+}
+
+.bohan-pic {
+    filter: grayscale(100%);
+    width: 30%;
+    min-width: 400px;
+    transition: filter .7s ease-in, transform .3s ease-out;
+    transform-origin: right top;
+}
+
+.bohan-pic:hover {
+    transform: scale(1.1);
+}
+
+.bio {
+    margin-top: 245px;
+    margin-bottom: 485px;
+    font-size: clamP(30px, 4.2361vw, 90px);
+    line-height: 1.229;
+    opacity: .7;
+}
+
+.p-2 {
+    text-indent: 15%;
+}
+
+.name {
+    font-family: 'Ogg lt', Helvetica, sans-serif;
+    color: var(--red);
+}
+
+.phoenix {
+    margin-top: -4px;
+}
+
+footer {
+    padding: 0 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+footer.tour-pg {
+    margin-top: 248px;
+}
+
+.colorize {
+    filter: grayscale(0);
+}
+
+.countries {
+    margin-bottom: 120px;
+}
+
+.countries p {
+    display: inline;
+}
+
+.countries p:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
+span {
+    margin-left: 3px;
+    opacity: .3;
+}
+
+.info {
+    display: flex;
+}
+
+.info:hover {
+    color: var(--red);
+}
+
+.tour {
+    padding-top: 460px;
+}
+
+.dates {
+    line-height: 1.133;
+    display: none;
+}
+
+.day {
+    width: 40%;
+}
+
+.arena {
+    margin-left: auto;
+}
+
+.dates p {
+    margin-bottom: 5px;
+    font-size: clamp(16px, 2.1vw, 30px);
+}
+
+.music {
+    margin-top: 516px;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.arrows {
+    margin-bottom: 124px;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    min-width: 100px;
+}
+
+.arrows img {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: clamp(16px, 2.1vw, 30px);
+    margin-bottom: -4px;
+    align-self: end;
+}
+
+.grp {
+    margin-left: auto;
+}
+
+
+
+@media (min-width: 1440px) {
+
+    .bio p {
+        font-family: 'Neue Haas ds reg', Helvetica, sans-serif;
+        line-height: 1.3;
+    }
+
+}
+
