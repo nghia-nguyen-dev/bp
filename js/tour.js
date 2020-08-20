@@ -9,6 +9,7 @@ countries.addEventListener('click', function(e) {
 
     const country = e.target.dataset.country;
     document.querySelector(`.dates--${country}`).style.display = 'block';
+   
 
 })
 
