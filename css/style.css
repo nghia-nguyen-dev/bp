@@ -1,3 +1,5 @@
+/* ----------------------------- font-face ----------------------------- */
+
 @font-face {
     font-family: 'Neue Haas txt reg';
     src: url(../assets/fonts/NHaasGroteskTXPro-55Rg.otf);
@@ -18,12 +20,13 @@
     src: url(../assets/fonts/Ogg-Light.ttf);
 }
 
+
+/* ----------------------------- css variables ----------------------------- */
+
 :root {
     --bg-color: #F7F7F8;
     --red:#E10000;
 }
-
-
 
 a:link {
     text-decoration: none;
@@ -33,9 +36,6 @@ a:visited {
     text-decoration: none;
     color: initial;
 }
-
-
-
 
 body {
     background-color: var(--bg-color);
@@ -50,6 +50,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.header-main {
+    margin-bottom: 2px;
 }
 
 nav {
@@ -147,6 +151,7 @@ footer.tour-pg {
 
 .countries {
     margin-bottom: 120px;
+    font-size: clamp(16px, 2.1vw, 30px);
 }
 
 .countries p {
@@ -179,8 +184,6 @@ span {
     line-height: 1.133;
     display: none;
 }
-
-
 
 .day {
     width: 40%;
@@ -243,6 +246,22 @@ span {
 
 
 
+
+
+/* ----------------------------- media queries ----------------------------- */
+
+@media (min-width: 1600px) {
+
+    .bio {
+        opacity: .65;
+    }
+
+    .bio p {
+        line-height: 1.35;
+    }
+
+}
+
 @media (min-width: 1440px) {
 
     .bio p {
@@ -253,15 +272,19 @@ span {
 }
 
 @media (max-width: 960px) {
+
     h2 {
         letter-spacing: -5px;
     }
+
 }
 
 @media (max-width: 760px) {
+
     .bohan-pic {
         min-width: 200px;
     }
+
     .tour {
         padding-top: 280px;
     }
@@ -269,19 +292,24 @@ span {
     .music {
         margin-top: 280px;
     }
+
     .countries {
         margin-bottom: 80px;
     }
+
     .flexbox {
         flex-direction: column;
     }
+
     .frame {
         border-width: 4px;
         margin-top: initial;
     }
+
     .titles {
         margin-bottom: 80px;
     }
+
 }
 
 @media (max-width: 680px) {
@@ -289,9 +317,11 @@ span {
     .music {
         grid-template-columns: 1fr;
     }
+
     .mv {
         letter-spacing: -4px;
     }
+
     footer {
         font-size: 10px;
     }
@@ -301,7 +331,7 @@ span {
 @media (max-width: 480px) {
 
     h2 {
-        letter-spacing: -2px;
+        letter-spacing: -3px;
     }
 
     .day {
@@ -317,6 +347,7 @@ span {
         min-width: initial;
         width: 100%;
     }
+
     .phoenix {
         display: none;
     }
@@ -331,16 +362,19 @@ span {
     }
 
     .bio {
-        margin-top: 80px;
+        margin-top: 70px;
         font-family: 'Neue Haas txt reg';
         font-size: 16px;
         margin-bottom: 225px;
+        opacity: 1;
+        line-height: 1.37;
     }
 
     h1 {
         font-size: 34.2vw;
         margin-left: -2px;
     }
+
     .tour {
         padding-top: 200px;
     }
@@ -348,6 +382,11 @@ span {
     .music {
         margin-top: 200px;
     }
-    
+
+    .tour-yr,
+    .mv {
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+    }
  
 }
