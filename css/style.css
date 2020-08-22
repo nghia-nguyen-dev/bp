@@ -28,8 +28,11 @@
     --red:#E10000;
 }
 
+/* ----------------------------- general ----------------------------- */
+
 a:link {
     text-decoration: none;
+    color: black;
   }
   
 a:visited {
